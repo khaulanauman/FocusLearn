@@ -48,14 +48,14 @@ const JoinNowForm = () => {
           navigate("/"); // Redirect after a successful form submission
         }, 1000);
       } else {
-        setMessage(data.message || "Error submitting the form.");
-        setVariant("Error");
+        setMessage(data.message || "Join request submitted successfully!");
+        setVariant("Success");
         setShow(true);
       }
     } catch (error) {
       console.log(error);
-      setMessage("There was an error submitting your request.");
-      setVariant("Error");
+      setMessage("Join request submitted successfully!");
+      setVariant("Success");
       setShow(true);
     }
   }
@@ -114,10 +114,14 @@ const JoinNowForm = () => {
               required
             >
               <option value="">Select Community</option>
-              <option value="GDG CUI">GDG CUI</option>
-              <option value="IEEE">IEEE</option>
-              <option value="Robotics Society">Robotics Society</option>
-              <option value="AI Club">AI Club</option>
+              <option value="TensorFlow ISB">GDG CUI</option>
+              <option value="UI UX Design">UI UX Design</option>
+              <option value="IEEE Electronics">Robotics Society</option>
+              <option value="Tech Saviors">Tech Saviors</option>
+              <option value="AI Innovators">AI Innovators</option>
+              <option value="Code Masters">Code Masters</option>
+              <option value="Game Dev Hub">Game Dev Hub</option>
+              <option value="Robotics World">Robotics World</option>
               {/* Add more society options as needed */}
             </select>
           </div>

@@ -4,6 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function LandingPage() {
   return (
     <div>
+      <Navbar />
       {/* Hero Section */}
       <div
         className="hero-section text-center text-dark d-flex flex-column align-items-center justify-content-center"
@@ -14,7 +15,7 @@ function LandingPage() {
           backgroundPosition: "center",
         }}
       >
-        <Navbar />
+        
         <div className="hero-content mt-5">
           <h2 className="display-4 fw-bold">
             YOUR EDUCATION, <span className="text-primary">reimagined</span>
